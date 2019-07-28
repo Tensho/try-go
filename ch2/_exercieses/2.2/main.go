@@ -1,6 +1,3 @@
-// $ go run -pkgdir tempconv,lengthconv,weightconv main.go 1 4
-// $ go run -pkgdir tempconv,lengthconv,weightconv main.go
-
 package main
 
 import (

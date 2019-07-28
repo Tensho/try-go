@@ -1,5 +1,3 @@
-// $ go run -pkgdir tempconv main.go 273.15
-
 package main
 
 import (
