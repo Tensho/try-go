@@ -1,15 +1,15 @@
 package main
 
 import (
-	"fmt"
-	"os"
-	"strconv"
+  "fmt"
+  "os"
+  "strconv"
 
-	"./tempconv"
+  "./tempconv"
 )
 
 func main() {
-	for _, arg := range os.Args[1:] {
+  for _, arg := range os.Args[1:] {
       t, err := strconv.ParseFloat(arg, 64)
       if err != nil {
           fmt.Fprintf(os.Stderr, "%v\n", err)
