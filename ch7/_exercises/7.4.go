@@ -5,7 +5,7 @@ import (
   "golang.org/x/net/html"
 )
 
-type StringReader struct {
+type stringReader struct {
   source string
 }
 
@@ -15,10 +15,10 @@ func main() {
 }
 
 func NewReader(s string) io.Reader {
-  return &StringReader{source: s}
+  return &stringReader{source: s}
 }
 
-func (r *StringReader) Read(p []byte) (n int, err error) {
+func (r *stringReader) Read(p []byte) (n int, err error) {
   n = copy(p, r.source)
   r.source = r.source[n:]
   if len(r.source) == 0 {
